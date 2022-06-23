@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 export default function Magic({ magicCard }) {
   return (
     <Link to={`/magic/${magicCard.id}`}>
-      <div>
-        <image src={magicCard.cardImage}/>
-        <p>{magicCard.cardName}</p>
+      <div className='magic-card'>
+        <img src={magicCard.cardimage}/>
+        <p>{magicCard.cardname}</p>
       </div>
     </Link>
   );

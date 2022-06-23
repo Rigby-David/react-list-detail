@@ -5,7 +5,7 @@ import Magic from './Magic';
 
 export default function MagicList({ magicCards }) {
   return (
-    <div>
+    <div className='magic-list'>
       {
         magicCards.map((magicCard, i) => <Magic key={magicCard.cardName + i + magicCard.id} magicCard={magicCard} />)
       }

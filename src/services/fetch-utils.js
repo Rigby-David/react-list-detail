@@ -1,13 +1,13 @@
-import { client, checkError } from './client';
+import { client } from './client';
 
-export async function getMagicCards() {
-  const response = await client.from('magic').select('*');
+export async function getMagicCards(from = 0, to = 20) {
+  const response = await client.from('magic').select('*').range(from, to);
 
-  return checkError(response);
+  return response.data;
 }
 
 export async function getSingleMagicCard(id) {
   const response = await client.from('magic').select('*').match({ id }).single();
 
-  return checkError(response);
+  return response.data;
 }
