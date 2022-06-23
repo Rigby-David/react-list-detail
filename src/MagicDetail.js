@@ -23,15 +23,14 @@ export default function MagicDetail() {
       <Link to='/'>Home</Link>
       <div className='magic-detail'>
         <h3>{magicCard.cardname}</h3>
-        <p>{magicCard.cardcmc}</p>
-        <p>{magicCard.cardtype}</p>
-        <p>{magicCard.creaturetype}</p>
-        <p>{magicCard.powtough}</p>
-        <p>{magicCard.set}</p>
-        <p>{magicCard.setnum}</p>
-        <p>{magicCard.rarity}</p>
-        <p>{magicCard.language}</p>
-        <p>{magicCard.language}</p>
+        <p>Converted mana cost of: {magicCard.cardcmc}</p>
+        <p>Card type: {magicCard.cardtype}</p>
+        <p>Creature type: {magicCard.creaturetype}</p>
+        <p>Power/Toughness: {magicCard.powtough}</p>
+        <p>From: {magicCard.set}</p>
+        <p>Set number: {magicCard.setnum}</p>
+        <p>Rarity: {magicCard.rarity}</p>
+        <p>Language: {magicCard.language}</p>
         <img src={magicCard.cardimage}/>
       </div>
     </>
