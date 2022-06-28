@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.magic-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.magic-card {
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid black;
+}
+
+.magic-card p {
+  background-color: salmon;
+}
+
+img {
+  height: 300px;
+  padding: 5px;
+}
+
+/* .magic-detail p{
+  background-color: salmon;
+} */
+
