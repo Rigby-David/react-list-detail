@@ -25,7 +25,7 @@ function App() {
     <>
       <h2>Current Page {page}</h2>
       <div>
-        <button onClick={() => setPage(page - 1)}>Prev</button>
+        <button disabled={page <= 1} onClick={() => setPage(page - 1)}>Prev</button>
         <button onClick={() => setPage(page + 1)}>Next</button>
       </div>
       <MagicList magicCards={magicCards}/>
